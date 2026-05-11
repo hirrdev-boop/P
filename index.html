@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THOHIR - Website Sederhana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #2c5364;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #2c5364;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .content {
+            margin: 30px 0;
+        }
+
+        .content p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #0f2027, #203a43);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        button {
+            background: #2c5364;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #1a3a47;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2.5rem; }
+            .card { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>THOHIR</h1>
+        <div class="subtitle">✦ Welcome ✦</div>
+
+        <div class="content">
+            <p>Halo! Website sederhana ini dibuat khusus untuk <strong>THOHIR</strong>.</p>
+            <div class="highlight">⭐ THOHIR | Kreatif & Hebat ⭐</div>
+            <p>Teruslah berkarya dan jangan pernah menyerah!</p>
+        </div>
+
+        <button onclick="alert('THOHIR, kamu keren! 💪')">Klik untuk Semangat</button>
+
+        <footer>
+            &copy; 2025 - Website untuk THOHIR
+        </footer>
+    </div>
+</body>
+</html>
